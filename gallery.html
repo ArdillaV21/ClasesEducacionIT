@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos Web</title>
+    <!-- Estilos CSS -->
+    <style>
+        body{
+            margin: 0;
+            font-family: 'calibri','segoe ui', sans-serif;
+        }
+        img{
+            max-width: 178px;
+            width: 100%;
+        }
+        header,
+        footer{
+            padding: 16px;
+            text-align: center;
+            color: #eee;
+            background-color: #448;
+        }
+        nav ul{
+            padding: 0;
+            background-color: rgb(34,34,68);
+        }
+        nav li{
+            display: inline-block;
+            padding: 8px;
+        }
+        nav a{
+            color: rgb(192,192,192);
+            text-decoration: none;
+        }
+        nav li:hover{
+            background-color: #66c;
+        }
+        .box{
+            padding: 24px;
+            background-color: #ccc;
+
+        }
+        div.box{
+            text-align: center;
+        }
+        #contact{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -33,10 +79,10 @@
             Dentro de los elementos que podemos utilizar en un sitio web, se encuentran las imagenes, las cuales se incorporan dentro de las paginas gracias a la etiqueta <strong>&lt;img></strong>. Dentro de dicha etiqueta podemos colocar los atributos <em>src y alt</em>
         </p>
         <div class="box">
-            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" style="width: 24%;">
-            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" style="width: 24%;">
-            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" style="width: 24%;">
-            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" style="width: 24%;">
+            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" >
+            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" >
+            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" >
+            <img src="./assets/img/luffy.jpg" alt="Money D. Luffy One Piece" >
         </div>
         <h3>Formatos soportados</h3>
         <p>
@@ -61,10 +107,22 @@
             </li>
         </ul>
 
+        <h2>Imagenes y textos</h2>
+        
+        <p class="box">
+            <img src="assets/bg/montaña.jpg" alt="OSX Yosemite">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum exercitationem distinctio reprehenderit aliquid totam architecto, temporibus modi odit, perspiciatis aperiam molestiae labore quibusdam tenetur illo repellat ut sequi nemo. Minus cum possimus fuga nobis quas ipsa tempore harum consequuntur sapiente quae maxime amet, aut, vitae ipsam officia modi, porro culpa aspernatur ipsum veritatis molestias iste nam? Aspernatur maxime, officia odit labore aliquid sunt dicta eos mollitia optio expedita commodi hic ipsa iusto, explicabo ad est eum quis reiciendis excepturi asperiores, autem dolore incidunt quaerat! Eum cumque facilis nesciunt perspiciatis asperiores. Saepe optio officia consectetur debitis dignissimos ipsam voluptatum autem!
+        </p>
+
+        <p class="box">
+                <img src="assets/bg/montaña.jpg" alt="OSX Yosemite">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum exercitationem distinctio reprehenderit aliquid totam architecto, temporibus modi odit, perspiciatis aperiam molestiae labore quibusdam tenetur illo repellat ut sequi nemo. Minus cum possimus fuga nobis quas ipsa tempore harum consequuntur sapiente quae maxime amet, aut, vitae ipsam officia modi, porro culpa aspernatur ipsum veritatis molestias iste nam? Aspernatur maxime, officia odit labore aliquid sunt dicta eos mollitia optio expedita commodi hic ipsa iusto, explicabo ad est eum quis reiciendis excepturi asperiores, autem dolore incidunt quaerat! Eum cumque facilis nesciunt perspiciatis asperiores. Saepe optio officia consectetur debitis dignissimos ipsam voluptatum autem!
+        </p>
+            
     </main>
     <!-- Pie de Pagina: Contenido Complementario -->
     <footer>
-        <P>&copy;2024 Todos los derechos reservados</P>
+        <p id="contact">&copy;2024 Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
