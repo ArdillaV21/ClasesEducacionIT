@@ -1,10 +1,72 @@
 *{
-    color: #333;
     font-family: 'calibri', 'segoe ui', sans-serif;
 }
-body,h1,h2,h3,header p{
+body,h1,h2,h3,header p,.example figure,.menu,#header{
     margin: 0;
 }
+footer a{
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #448;
+}
+.menu a{
+    color: #ccc;
+}
+.menu a:hover,
+.menu a.active{
+    color: white;
+    text-shadow: 0 0 .25rem;
+}
+.menu, .example{
+    list-style: none;
+}
+
+#header{
+    padding: min(20%, 240px) 1rem;
+    text-align: center;
+    background-image: url("../assets//bg/montaña.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.header{
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+    color: #eee;
+    background-color: #448;
+}
+
+header{
+    border-bottom: .1rem solid;
+    color: #448;
+}
+.example{
+    padding: 1rem;
+    background-color: #ccc;
+}
+.container{
+    display: flex;
+    gap: .5rem;
+    overflow: auto;
+}
+.example figure{
+    min-width: min(90%, 720px);
+}
+.example iframe{
+    width: 100%;
+    min-height: 360px;
+}
+#footer iframe{
+    width: 100%;
+    min-height: 320px;
+}
+
 #contact{
     display: flex;
     flex-direction: column;
@@ -21,7 +83,44 @@ input,textarea,select{
     padding: .5rem;
     font-size: 1rem;
 }
-
+textarea{
+    resize: vertical;
+    min-height: 5rem;
+}
 form :focus{
     box-shadow: 0 0 .5rem #448;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap-reverse;
+}
+.social a{
+    border-radius: .25rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ccc;
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.social a:hover{
+    background-color: #eee;
+    background-size: 3.25rem;
+    box-shadow: 0 .25rem .5rem #333;
+}
+.tiktok{
+    background-image: url("../assets/icon/tik-tok.svg");
+}
+.youtube{
+    background-image: url("../assets/icon/youtube.svg");
+}
+.github{
+    background-image: url("../assets/icon/github.svg");
+}
+.video{
+    width: 60%;
 }
