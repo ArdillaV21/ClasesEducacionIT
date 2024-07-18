@@ -1,0 +1,27 @@
+*{
+    color: #333;
+    font-family: 'calibri', 'segoe ui', sans-serif;
+}
+body,h1,h2,h3,header p{
+    margin: 0;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: auto;
+}
+label{
+    margin-top: .25rem;
+}
+input,textarea,select{
+    outline: none;
+    border: 1px solid #333;
+    border-radius: .25rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+form :focus{
+    box-shadow: 0 0 .5rem #448;
+}
