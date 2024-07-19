@@ -4,6 +4,7 @@
 body,h1,h2,h3,header p,.example figure,.menu,#header{
     margin: 0;
 }
+nav a,
 footer a{
     text-decoration: none;
 }
@@ -32,7 +33,6 @@ footer a{
     background-image: url("../assets//bg/montaña.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
 }
 
 .header{
@@ -46,9 +46,25 @@ header{
     border-bottom: .1rem solid;
     color: #448;
 }
+main{
+    max-width: 960px;
+    margin: .5rem auto;
+    padding: .5rem;
+}
+article{
+    margin: 1.5rem 0;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 0 .5rem #ccc;
+    overflow: hidden;
+}
 .example{
+    max-width: 720px;
+    margin: 1rem auto;
+    border-left: .25rem solid #448;
     padding: 1rem;
     background-color: #ccc;
+    line-height: 1.5rem;
 }
 .container{
     display: flex;
@@ -62,6 +78,39 @@ header{
     width: 100%;
     min-height: 360px;
 }
+th,td{
+    width: 100px;
+}
+caption,th,td{
+    padding: .5rem;
+}
+table caption{
+    border-radius: .5rem .5rem 0 0;
+}
+.classic{
+    border-collapse: collapse;
+}
+.classic caption,
+.classic th,
+.classic td{
+    border: 1px solid #448;
+}
+.classic caption{
+    border-bottom: none;
+}
+.modern, .modern caption, .modern tr,.modern td{
+    color: #eee;
+    background-color: rgba(68,68,136,.5);
+}
+.semantic thead{
+    background-color: #c33;
+}
+.semantic tbody{
+    background-color: #3c6;
+}
+.semantic tfoot{
+    background-color: #248;
+}
 #footer iframe{
     width: 100%;
     min-height: 320px;
@@ -74,7 +123,7 @@ header{
     margin: auto;
 }
 label{
-    margin-top: .25rem;
+    margin-top: .5rem;
 }
 input,textarea,select{
     outline: none;
@@ -94,14 +143,14 @@ form :focus{
 .social{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap-reverse;
     padding: 1rem;
     gap: 1rem;
-    flex-wrap: wrap-reverse;
 }
 .social a{
     border-radius: .25rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #ccc;
     background-size: 3rem;
     background-position: center;

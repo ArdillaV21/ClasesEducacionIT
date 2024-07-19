@@ -97,9 +97,110 @@
                 </div>
             </section>
         </article>
+        <article>
+            <header class="header">
+                <h2>Tablas HTML</h2>
+            </header>
+            <p>Son herramientas que permiten <strong>organizar la informacion de manera tabular</strong>, para implementarlas debemos colocar la etiqueta <em>&lt;table</em> en la pagina y dentro de la misma las etiquetas que la conforman.</p>
+            <section>
+                <header>
+                    <h3>¿Poseen Estructura Semantica?</h3>
+                </header>
+                <p>A partir de HTML5, a la <em>etiqueta menciona anteriormente</em> se le incoporaron nuevas elementos, que permite identificar con mayor facilidad las partes de la misma. Cabe memcionar que las etiquetas <strong>&lt;tr> (Table Row)</strong> y <strong>&lt;td> (Table Division)</strong> se implementan dentro de la estructura, representada por las siguientes etiquetas</p>
+                <ul class="example">
+                    <li><strong>THEAD</strong> Cabecera de Tabla, cuyo contenido son los encabezados que se representan con la etiqueta <em>&lt;th></em></li>
+                    <li><strong>TBODY</strong> Cuerpo de Tabla, que contiene los datos a ser representados. Puede contener celdas de encabezado.</li>
+                    <li><strong>TFOOT</strong> Pie de Tabla, contiene datos complementarios como totales, maximos, minimos, etc. y es opcional</li>
+                </ul>
+                <div class="example container">
+                    <table class="classic">
+                        <caption>Usuarios</caption>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FedericoV21</td>
+                                <td>fedevalle474@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>FedericoV21</td>
+                                <td>fedevalle474@example.com</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <table class="modern">
+                        <caption>Rutina semanal</caption>
+                        <!-- Cabecera -->
+                        <thead>
+                            <tr>
+                                <th>Turno</th>
+                                <th>Lu</th>
+                                <th>Ma</th>
+                                <th>Mi</th>
+                                <th>Ju</th>
+                                <th>Vi</th>
+                                <th>Sa</th>
+                            </tr>
+                        </thead>
+                        <!-- Cuerpo -->
+                        <tbody>
+                            <tr>
+                                <th>ma</th>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <th>ta</th>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>no</th>
+                                <td></td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <!-- Pie -->
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </article>
     </main>
     <footer id="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6879542.580848808!2d-66.5718659458094!3d-32.655408339151556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1721329303103!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <form id="contact" action="scripts/contact.php" method="GET">
             <h2>¿Necesitas Ayuda?</h2>
             <label for="contact_name">Ingresa su Nombre</label>
@@ -116,25 +217,27 @@
             <textarea id="contact_consult" name="consult" placeholder="Buenas! mi consulta es sobre..." minlength="30" maxlength="1500" required></textarea>
             <input type="submit" value="Aceptar">
         </form>
-
+        
         <div class="social">
             <a class="tiktok" 
-                href="https://www.tiktok.com/" 
-                target="_blank"
-                title="Seguinos en Tik Tok">
-            </a>
-            <a class="youtube" 
-                href="https://youtube.com" target="_blank"
-                title="Seguinos en Youtube">
+            href="https://www.tiktok.com/" 
+            target="_blank"
+            title="Seguinos en Tik Tok">
+        </a>
+        <a class="youtube" 
+        href="https://youtube.com" target="_blank"
+        title="Seguinos en Youtube">
             </a>
             <a class="github" 
-                href="https://github.com/ArdillaV21/ClasesEducacionIT" target="_blank" title="Seguinos en Git Hub">
-            </a>
-        </div>
-
-
-        <p>&copy;2020 Todos los derechos reservados</p>
-    </footer>
+            href="https://github.com/ArdillaV21/ClasesEducacionIT" target="_blank" title="Seguinos en Git Hub">
+        </a>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6879542.580848808!2d-66.5718659458094!3d-32.655408339151556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1721329303103!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+    <p>&copy;2020 Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
